@@ -16,5 +16,6 @@ public class Chapter2 {
         car.drive(50);
         car.refillFuel(70);
         car.drive(1000);
+        car.drive(10000);
     }
 }
