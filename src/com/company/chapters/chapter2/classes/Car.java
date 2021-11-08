@@ -19,16 +19,22 @@ public class Car {
         }
         System.out.println("Fuel before driving: " + fuel);
         double lostFuel = x/mpg;
-        if (lostFuel>fuel)
-        fuel -= lostFuel;
-        System.out.println("Fuel after driving: " + fuel + "\nWe driving " + x +" miles");
+        if (lostFuel>fuel) {
+            double canDrive = mpg * fuel;
+            System.out.println("We drive only " + canDrive + " miles");
+            fuel = 0;
+        }
+        else {
+            fuel -= lostFuel;
+            System.out.println("Fuel after driving: " + fuel + "\nWe driving " + x + " miles");
+        }
     }
 
     public void refillFuel(double fuel) {
         if (fuel < 0) return;
         if (this.maxFuel - this.fuel <= fuel) {
             this.fuel = this.maxFuel;
-            System.out.println("Tank is full: " + fuel + " gallons");
+            System.out.println("Tank is full: " + this.fuel + " gallons");
         }
         else {
             this.fuel += fuel;
