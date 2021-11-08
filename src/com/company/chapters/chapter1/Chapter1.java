@@ -10,6 +10,7 @@ public class Chapter1 {
 
     public static void ex1() {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter number: ");
         int number = scanner.nextInt();
         System.out.println("Binary: " + Integer.toBinaryString(number));
         System.out.println("Octal: " + Integer.toOctalString(number));
@@ -19,6 +20,7 @@ public class Chapter1 {
 
     public static void ex2() {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter number:");
         int normalizeNumber = scanner.nextInt();
         if (normalizeNumber >= 0 && normalizeNumber <= 359) System.out.println("Number is ok");
         else System.out.println("Number is not ok");
@@ -26,6 +28,7 @@ public class Chapter1 {
 
     public static void ex3() {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter 3 numbers");
         int num1 = scanner.nextInt();
         int num2 = scanner.nextInt();
         int num3 = scanner.nextInt();
@@ -49,6 +52,7 @@ public class Chapter1 {
     }
 
     public static void ex6() {
+        System.out.println("Укажите число:");
         BigInteger factorial = new BigInteger("1");
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
