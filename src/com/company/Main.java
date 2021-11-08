@@ -8,7 +8,7 @@ import com.company.chapters.chapter4.Chapter4;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("\n###############################\nChapter2");
+        System.out.println("\n###############################\nChapter1");
         System.out.println("\nEx1");
         Chapter1.ex1();
         System.out.println("\nEx2");
