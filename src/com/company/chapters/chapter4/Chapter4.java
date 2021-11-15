@@ -7,7 +7,7 @@ import com.company.chapters.chapter4.figures.Rectangle;
 import com.company.chapters.chapter4.figures.Shape;
 
 public class Chapter4 {
-    public static void ex4() {
+    public static void shapeInterface() {
         Shape[] shapes = new Shape[]{new Rectangle(new Point(3, 4), 50, 100)
                 , new Circle(new Point(200, 300), 50)
                 , new Line(new Point(20, 30), new Point(100, 200))
@@ -22,7 +22,7 @@ public class Chapter4 {
         }
     }
 
-    public static void ex5() {
+    public static void cloneForShape() {
         Circle circle = new Circle(new Point(3,4),10);
         Circle circle1 = (Circle)circle.clone();
         System.out.println(circle + "\tCopy: " + circle1);

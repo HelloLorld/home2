@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Chapter1 {
 
-    public static void ex1() {
+    public static void printBinaryOctalHexadecimal() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number: ");
         int number = scanner.nextInt();
@@ -18,7 +18,7 @@ public class Chapter1 {
         System.out.println("RevHex: " + Double.toHexString(1.0 / number));
     }
 
-    public static void ex2() {
+    public static void checkNumberInRange() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number:");
         int normalizeNumber = scanner.nextInt();
@@ -26,7 +26,7 @@ public class Chapter1 {
         else System.out.println("Number is not ok");
     }
 
-    public static void ex3() {
+    public static void largestNumber() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter 3 numbers");
         int num1 = scanner.nextInt();
@@ -46,12 +46,12 @@ public class Chapter1 {
                 + Math.max(num1, Math.max(num2, num3)));
     }
 
-    public static void ex4() {
+    public static void smallestAndMaxPositiveDouble() {
         System.out.println(Double.MIN_VALUE);
         System.out.println(Double.MAX_VALUE);
     }
 
-    public static void ex6() {
+    public static void factorialOfNumber() {
         System.out.println("Укажите число:");
         BigInteger factorial = new BigInteger("1");
         Scanner scanner = new Scanner(System.in);
@@ -69,7 +69,7 @@ public class Chapter1 {
         System.out.println("Факториал 1000 равен: " + factorial);
     }
 
-    public static void ex13() {
+    public static void lottery() {
         ArrayList<Integer> lottery = new ArrayList<>();
         for (int i=1;i<=49;i++)
             lottery.add(i);
